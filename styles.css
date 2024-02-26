@@ -11,39 +11,33 @@
 
 .header {
     width: 100%;
-    height: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px; /* Adding padding to create space for the parent container */
 }
-  
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 7%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
 }
-  
+
 .logo {
     font-size: 3rem;
     font-weight: 700;
     color: #0F1035;
     text-transform: capitalize;
 }
-  
+
 nav .links a {
-    color:#0F1035; ;
+    color:#0F1035;
     font-size: 1.5rem;
     margin-right: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     position: relative;
 }
-  
+
 nav .links a:after {
     content: '';
     width: 0%;
@@ -54,56 +48,114 @@ nav .links a:after {
     bottom: -12px;
     transition: 0.4s;
 }
+
 nav .links a:hover::after {
     width: 100%;
 }
 
-.parent {
+.content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 0px;
+    margin-top: 20px; /* Adjust the margin as needed */
 }
-  
+
 .div1 {
-    grid-area: 1 / 1 / 2 / 2;
-    border: 2px solid #ccc; /* Add border to div1 */
+    border: 2px solid #ccc;
     height: 50vh;
     padding:20px;
 }
-  
+
 .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-    border: 2px solid #ccc; /* Add border to div2 */
+    border: 2px solid #ccc;
     height: 50vh;
     padding:20px;
 }
-  
-  
+
 .div1 img {
-    max-width: 100%; /* Ensure the image does not exceed the container's width */
-    height: auto; /* Maintain the image's aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
-  
+
 .div2 h1 {
     margin-top: 20px;
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
-  
+
 .div2 h3 {
     margin-top: 20px;
     font-size: 18px;
     color: #555;
     margin-bottom: 8px;
 }
-  
+
 .div2 p {
     margin-top: 20px;
     font-size: 16px;
     color: #777;
     line-height: 1.6;
 }
-  
+
+.team-section {
+    text-align: center; /* Center-align the content within the section */
+    padding: 20px; /* Add padding to the section */
+}
+
+.team-section h2 {
+    margin-bottom: 20px; /* Add margin at the bottom of the h2 */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add gap between the cards */
+}
+
+.card {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 30px; /* Increase padding for more space inside the cards */
+    text-align: center;
+    max-width: 300px; /* Set maximum width for the cards */
+    background-color: #ffffff;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h1 {
+    margin-top: 20px; /* Adjust margin for title */
+    font-size: 1.8rem; /* Increase font size for title */
+}
+
+.card h3 {
+    margin-top: 10px; /* Adjust margin for subtitle */
+    font-size: 1.4rem; /* Increase font size for subtitle */
+}
+
+.card p {
+    margin-top: 10px; /* Adjust margin for description */
+    color: #666666;
+    font-size: 1.2rem; /* Increase font size for description */
+}
+.social-icons {
+    margin-top: 10px; /* Add some space between description and icons */
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px; /* Add space between icons */
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #333; /* Set icon color */
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
