@@ -175,87 +175,90 @@ nav .links a:hover::after {
     padding: 30px;
 }
 
-
-
-
-
-
-
-
-.team {
-    margin-top: 10px;
-    padding: 20px; /* Add padding to the section */
+.team .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
 }
-
-.team h2 {
-    text-align: center; /* Center-align the content within the section */
-    margin-bottom: 20px; /* Add margin at the bottom of the h2 */
+.team .heading {
     font-size: 5rem;
-}
-.team h3{
-    text-align: center; /* Center-align the content within the section */
-    margin-bottom: 20px; /* Add margin at the bottom of the h2 */
-    font-size: 5rem;
-}
-.team p{
-    text-align:center; /* Center-align the content within the section */
-    font-size: 2rem;
-}
-
-.cards-container {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Add gap between the cards */
-}
-
-.card {
-    border: 2px solid;
-    border-color: var(--font-heading);
-    border-radius: 10px;
-    padding: 70px; /* Adjust padding for more space inside the cards */
-    height: auto;
     text-align: center;
-    max-width: 300px; /* Set maximum width for the cards */
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+.team .heading span{
+    color: var(--font-heading);
 }
 
-.card img {
-    max-width: 100%;
-    border-radius: 10px;
+.team .heading-description {
+    text-align: center;
+    padding: 1.3rem 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.team .container .team-box {
+    width: auto;
+    cursor: pointer;
 }
 
-.cards-container .card h1 {
-    margin-top: 10px; /* Adjust margin for title */
-    font-size: 2.0rem; /* Increase font size for title */
+.team .container .team-box .team-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all linear 0.5s;
 }
 
-.card h3 {
-    margin-top: 10px; /* Adjust margin for subtitle */
-    font-size: 1.0rem; /* Increase font size for subtitle */
+.team .container .team-box .team-img:hover {
+    box-shadow: 0px 0px 10px 0px red;
 }
 
-.card p {
-    margin-top: 10px; /* Adjust margin for description */
-    font-size: 1.2rem; /* Increase font size for description */
+.team .container .team-box .team-img img {
+    width: 100%;
 }
 
-.social-icons {
-    margin-top: 10px; /* Add some space between description and icons */
-    display: flex;
-    justify-content: center;
+.team .container .team-box .team-img:hover img {
+    transform: scale(1.1);
 }
 
-.social-icon {
-    margin: 0 5px; /* Add space between icons */
-    font-size: 5rem; /* Adjust icon size */
-    color: #333; /* Set icon color */
+.team .container .team-box .team-content {
+    box-shadow: 3px 3px 10px rgba(179, 179, 179, 0.2);
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: -10%;
+    z-index: 2;
+    background: var(--white);
+    left: 10%;
+    border-radius: 0.8rem;
 }
 
-.social-icon:hover {
-    color: #007bff; /* Change color on hover */
+.team .container .team-box .team-content h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1.2rem 0;
+
+}
+
+.team .container .team-box .team-content p {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+}
+
+.team .container .team-box .team-content .social a {
+    display: inline-block;
+    margin: 0.7rem;
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.team .container .team-box .team-content .social a:hover {
+    border-radius: 100%;
+}
+
+.team .container .team-box:hover .team-content {
+    transform: translateY(-1rem);
 }
