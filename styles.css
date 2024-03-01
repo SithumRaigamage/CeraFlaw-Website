@@ -38,8 +38,6 @@ html {
     background-size: cover;
 }
 
-
-
 nav {
     display: flex;
     align-items: center;
@@ -86,13 +84,6 @@ nav .links a:hover::after {
     width: 100%;
 }
 
-nav #menu-btn,
-nav #close {
-    color: var(--white);
-    font-size: 2.5rem;
-    cursor: pointer;
-    display: none;
-}
 
 .header .content {
     padding: 150px 7%;
@@ -131,19 +122,31 @@ nav #close {
     transform: translate(0px, -3px);
 }
 
-
 .nav-change {
     background: rgba(0, 0, 0, 0.9);
 }
 
+
+
 .team {
     margin-top: 10px;
-    text-align: center; /* Center-align the content within the section */
+    
     padding: 20px; /* Add padding to the section */
 }
 
-.team-section h2 {
+.team h2 {
+    text-align: center; /* Center-align the content within the section */
     margin-bottom: 20px; /* Add margin at the bottom of the h2 */
+    font-size: 5rem;
+}
+.team h3{
+    text-align: center; /* Center-align the content within the section */
+    margin-bottom: 20px; /* Add margin at the bottom of the h2 */
+    font-size: 5rem;
+}
+.team p{
+    text-align:center; /* Center-align the content within the section */
+    font-size: 2rem;
 }
 
 .cards-container {
@@ -151,11 +154,12 @@ nav #close {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Add gap between the cards */
+    gap: 11px; /* Add gap between the cards */
 }
 
 .card {
     border: 2px solid;
+    border-color: var(--font-heading);
     border-radius: 10px;
     padding: 100px; /* Adjust padding for more space inside the cards */
     text-align: center;
@@ -171,9 +175,9 @@ nav #close {
     border-radius: 10px;
 }
 
-.card h1 {
+.cards-container .card h1 {
     margin-top: 10px; /* Adjust margin for title */
-    font-size: 1.0rem; /* Increase font size for title */
+    font-size: 2.0rem; /* Increase font size for title */
 }
 
 .card h3 {
@@ -194,7 +198,7 @@ nav #close {
 
 .social-icon {
     margin: 0 5px; /* Add space between icons */
-    font-size: 1.5rem; /* Adjust icon size */
+    font-size: 5rem; /* Adjust icon size */
     color: #333; /* Set icon color */
 }
 
