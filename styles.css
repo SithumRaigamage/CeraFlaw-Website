@@ -31,10 +31,8 @@ html {
 }
 
 .header {
-    width: 100%;
     height: 100vh;
     background-image: url(wallpaper.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -83,26 +81,31 @@ nav .links a:after {
 nav .links a:hover::after {
     width: 100%;
 }
-
-
-.header .content {
+.header .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
     padding: 150px 7%;
     color: var(--white);
 }
-
-.header .content h3 {
+.header .content .description{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.header .content .description h3 {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 3rem 0;
 }
 
-.header .content h1 {
-    font-size: 5rem;
+.header .content .description h1 {
+    font-size: 3rem;
     letter-spacing: 2px;
 }
 
-.btn {
+.header .content .description .btn {
     padding: 1.3rem 5rem;
     margin: 3rem 0;
     cursor: pointer;
@@ -116,21 +119,71 @@ nav .links a:hover::after {
 
 }
 
-.btn:hover {
+.header .content .description .btn:hover {
     background: var(--bg);
     color: var(--white);
     transform: translate(0px, -3px);
 }
 
-.nav-change {
-    background: rgba(0, 0, 0, 0.9);
+.header .content .partnership{
+    grid-area: 1 / 2 / 2 / 3;
+    
+
 }
+.header .content .partnership-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+.header .content .partnership-content .div1{
+    padding: 30px;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 350px;
+    
+}
+.header .content .partnership-content .div1 h1{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.header .content .partnership-content .div1 h3{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.header .content .partnership-content .div1 p{
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.header .content .partnership-content .div2{
+    grid-area: 1 / 2 / 2 / 3;
+   
+}
+.header .content .partnership-content .div2 img{
+    margin-top: 40px;
+    padding: 30px;
+}
+
+
+
+
+
 
 
 
 .team {
     margin-top: 10px;
-    
     padding: 20px; /* Add padding to the section */
 }
 
@@ -154,7 +207,7 @@ nav .links a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 11px; /* Add gap between the cards */
+    gap: 10px; /* Add gap between the cards */
 }
 
 .card {
