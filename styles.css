@@ -360,4 +360,79 @@ textarea {
 }
 
 
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--font-heading);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+}
 
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+
+.footer .container .footer-box {
+    padding: 1rem;
+}
+
+.footer .container .footer-box h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer .container .footer-box p {
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+
+.footer .container .footer-box form input {
+    width: 70%;
+    padding: 1rem;
+}
+
+.footer .container .footer-box p a {
+    color: var(--bg);
+}
+
+.footer .container .footer-box form button {
+    background: var(--bg);
+    color: var(--white);
+    padding: 1rem;
+    cursor: pointer;
+}
+.footer .container .footer-box  ul a {
+    margin-top: 10px;
+    display: block;
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    
+}
+
+.social a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fcf0ff;
+    margin:0 10px 10px 0;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.social a:hover {
+    background-color: #fcf0ff;
+    color: rgb(250, 138, 250);
+}
