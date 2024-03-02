@@ -175,6 +175,25 @@ nav .links a:hover::after {
     padding: 30px;
 }
 
+.product .product_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+.product .product_container .product_description { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+.product .product_container .product-content { 
+    grid-area: 1 / 2 / 2 / 3;
+}
+        
+
+
+
+
+
 .team .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -262,3 +281,83 @@ nav .links a:hover::after {
 .team .container .team-box:hover .team-content {
     transform: translateY(-1rem);
 }
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+    
+.contact .contact_description { 
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top:40px ;
+    padding: 20px;
+}
+.contact .contact_description h1{
+    font-size: 5rem;
+    color:var(--font-heading);
+}
+.contact .contact_description h3{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact .contact_description h3 span{
+    font-size: 2.5rem;
+    color: var(--font-heading);
+}
+.contact .contact_description p{
+    font-size: 2.5rem;
+    margin-top: 40px;
+    text-align: justify;
+
+
+}
+
+.contact .contact_form { 
+    grid-area: 1 / 2 / 2 / 3;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact .contact_form h2 {
+    margin-top: 10px;
+    font-size: 3rem;
+    color:var(--font-heading);
+}
+.contact .contact_form label{
+    margin-top: 10px;
+    font-size: 1.9rem;
+}
+.contact .contact_form input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact .contact_form textarea {
+    height: 120px;
+}
+.contact .contact_form input[type="submit"] {
+    background-color: var(--font-heading);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
