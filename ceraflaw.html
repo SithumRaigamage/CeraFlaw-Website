@@ -11,22 +11,34 @@
 </head>
 <body>
     <!-- Header Section -->
-    <div class="header" id="home">
-        <nav id="navbar">
-            <a href="#home" class="logo">CeraFlaw <span></span></a>
-            <div class="links" id="nav">
+    <header class="header">
+        <a href="#home"><img src="assets/logo.png" alt="" class="logo"></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#product">Product</a>
+            <a href="#about">About</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <!-- <div class="links" id="nav">
                 <a href="#home">Home</a>
                 <a href="#product">Product</a>
                 <a href="#about">About</a>
                 <a href="#team">Team</a>
                 <a href="#contact">Contact</a>
-            </div>
+            </div> -->
         </nav>
-        <div class="content">
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
             <div class="description">
                 <h3>Now you can analyse visual detect defects </h3>
                 <h1>install CeraFlaw Prototype into your <br>Tile Manufacturing Companies</h1>
-                <button class="btn">Contact Us Now</button>
+                <!-- <button class="btn">Contact Us</button> -->
+                <a href="#" class="btn">Contact Us</a>
             </div>
             <div class="partnership">
                 <div class="partnership-content">
@@ -50,59 +62,76 @@
             </div>
 
         </div>
-        
-    </div>
-    <!-- Header Section End -->
+    </section>
+    <!-- Home Section End-->
 
     <!-- Product Section -->
     <section class="product" id="product">
-        <div class="product_container">
-            <div class="product_description">
-                <!-- How it works -->
-                <div class="how-it-works">
-                    <h2>How It Works</h2>
-                    <p>Our product utilizes advanced technology to streamline processes and enhance user experience.
-                        Through seamless integration and intuitive design, users can easily navigate and leverage its
-                        functionalities.</p>
-                </div>
-                <!-- Features -->
-                <div class="features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li>Feature 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li>Feature 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Feature 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    </ul>
-                </div>
-                <!-- Benefits -->
-                <div class="benefits">
-                    <h2>Benefits</h2>
-                    <ul>
-                        <li>Benefit 1: Increased efficiency and productivity.</li>
-                        <li>Benefit 2: Cost-effective solution for businesses of all sizes.</li>
-                        <li>Benefit 3: Enhanced user satisfaction and engagement.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-content">
-                <img src="" alt="">
-                <button class="btn" style="color: black;">Visit Project</button>
-            </div>
+
+        <div class="product-btn">
+            <img src="assets/logo-color.png" alt="CeraFlaw Logo">
+            <a href="#" class="btn">Visit Project</a>
         </div>
+
+        <div class="product-content">
+            <h2 class="heading"><span>CeraFlaw</span></h2>
+
+            <p>Our product utilizes advanced technology to streamline processes and enhance user experience. Through seamless integration and intuitive design, users can easily navigate and leverage its functionalities.</p>
+
+            <h3>Features</h3>
+            <ul>
+                <li>Feature 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Feature 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Feature 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            </ul>
+
+            <h3>Benefits</h3>
+            <ul>
+                <li>Benefit 1: Increased efficiency and productivity.</li>
+                <li>Benefit 2: Cost-effective solution for businesses of all sizes.</li>
+                <li>Benefit 3: Enhanced user satisfaction and engagement.</li>
+            </ul>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        
+        <!-- <div class="product-container">
+            <div class="product-box">
+                <h3>How It Works</h3>
+
+                
+            </div>
+
+            <div class="product-box">
+                
+            </div>
+
+            <div class="product-box">
+                
+            </div>    
+        </div> -->
     </section>
     <!-- Product Section End -->
+
     <!-- About Section -->
     <section class="about" id="about">
-
+        <h2 class="heading">About <span>Us</span></h2>
     </section>
     <!-- Abouut Section End -->
 
     
-
     <!-- Team Section -->
     <section class="team" id="team">
-        <h1 class="heading"> Our <span>Team</span></h1>
-        <p class="heading-description">Software Enginnering Undergarduates Of IIT</p>
+        <h2 class="heading">Our <span>Team</span></h2>
+
+        <p class="heading-description">Software Enginnering Undergarduates of IIT</p>
         <div class="container">
             <div class="team-box">
                 <div class="team-img">
@@ -112,7 +141,7 @@
                     <h3>Sithum Raigamage</h3>
                     <h4>Full Stack Developer</h4>
                     <p>description</p>
-                    <div class="social">
+                    <div class="team-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -127,7 +156,7 @@
                     <h3>Praveen Dileesha</h3>
                     <h4>Full Stack Developer</h4>
                     <p>description</p>
-                    <div class="social">
+                    <div class="team-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -139,10 +168,10 @@
                     <img src="img/pic-1.png" alt="">
                 </div>
                 <div class="team-content">
-                    <h3>Thamindu Dassanayake</h3>
+                    <h3>Thamindu Dasanayake</h3>
                     <h4>Full Stack Developer</h4>
                     <p>description</p>
-                    <div class="social">
+                    <div class="team-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -157,7 +186,7 @@
                     <h3>Chaamith Nethsara</h3>
                     <h4>Full Stack Developer/Photographer</h4>
                     <p>description</p>
-                    <div class="social">
+                    <div class="team-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -172,7 +201,7 @@
                     <h3>Tharusha Maddumage</h3>
                     <h4>Backend Developer</h4>
                     <p>description</p>
-                    <div class="social">
+                    <div class="team-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -187,42 +216,53 @@
     <!-- Team Section End-->
 
     <!-- Contact Us Section -->
+    <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
-        <div class="contact_description">
-            <h1>Contact Us</h1>
-            <h3>If you have any inquiries or require further information about our cutting-edge ceramic
-                tile detection system utilizing AI and ML technologies<br><br> <span>please don't hesitate to reach out to us</span></h3>
-            <p>We offer detailed explanations, customization support, and assistance to optimize your operations. Contact us today to
-                revolutionize your manufacturing processes.</p>
-        </div>
-        <div class="contact_form">
-            <h2>Drop a Message</h2>
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name.." required>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email.." required>
-    
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Write something.." required></textarea>
-    
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        <h2 class="heading">Conatct <span>Us</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
     </section>
     <!-- Contact Us Section End -->
 
     <!--Footer Section-->
-    <section class="footer">
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Follow Us</p>
+        </div>
         
-    </section>
+        <div class="footer-social">
+            
+            <a href=""><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div class="footer-text">
+            <p>Copyrights &copy; 2024 All rights reserved By Ceraflaw</p>
+        </div>
+
+            
+            
+        
+    </footer>
     <!--Footer Section End-->
-    
 
 
-    
-
+    <!-- MAIN JS -->
+    <script src="script.js"></script>
 
     
 </body>
