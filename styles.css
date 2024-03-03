@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
-
 :root {
     --font-heading: crimson;
     --para-font: #777777;
@@ -98,7 +96,7 @@ span {
 
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--font-heading);
+    color: var(--black);
     display: none;
 }
 
@@ -398,78 +396,119 @@ textarea {
 
 
 .footer {
-    padding: 10px;
+    padding: 30px 0;
     background-color: var(--font-heading);
 }
 
-.footer .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
-    padding: 2.5rem 0;
-}
-
-.footer .container .footer-box {
-    padding: 1rem;
-}
-
-.footer .container .footer-box h3 {
-    color: var(--white);
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-}
-
-.footer .container .footer-box p {
-    color: var(--white);
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-    padding: 1.2rem 0;
-}
-.footer .container .footer-box p span{
-    color: var(--white);
-    font-size: 1.5rem;
-}
-
-.footer .container .footer-box form input {
-    width: 70%;
-    padding: 1rem;
-}
-
-.footer .container .footer-box p a {
-    color: var(--bg);
-}
-
-.footer .container .footer-box form button {
-    background: var(--bg);
-    color: var(--white);
-    padding: 1rem;
-    cursor: pointer;
-}
-.footer .container .footer-box ul li a {
-    margin-top: 10px;
-    display: block;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-decoration:none ;
-}
-
-.footer .container .footer-box .social a {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fcf0ff;
-    margin:0 10px 10px 0;
-    width: 45px;
-    height: 45px;
+.footer-social h3 {
     text-align: center;
-    line-height: 45px;
-    border-radius: 50%;
-    transition: all 0.2s ease;
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.footer .container .footer-box .social a:hover {
-    background-color: #fcf0ff;
-    color: rgb(250, 138, 250);
+.footer .footer-social {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer .footer-social a {
+    font-size: 2.4rem;
+    border: 0.2rem solid var(--white);
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: var(--white);
+    background: var(--black);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 1rem;
+    transition: 0.5s ease;
+}
+
+.footer .footer-social a:hover {
+    background: var(--white);
+    color: var(--font-heading);
+}
+
+.footer p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+@media (max-width: 900px) {
+    #menu-icon {
+        display: block;
+    }
+
+    #menu-icon:hover {
+        color: var(--font-heading);
+        transition: .5s ease;
+    }
+
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--white);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.7rem;
+        margin: 2.7rem 0;
+    }
+
+    .navbar a:hover::after,
+    .navbar a.active::after {
+        width: 12%;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content h2 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content {
+        order: 2;
+    }
+
+    .home-img img {
+        width: 30vw;
+        margin-top: 2rem;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .product-img img {
+        width: 50vw;
+        margin-top: 4rem;
+    }
+
 }
