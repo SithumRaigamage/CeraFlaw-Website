@@ -31,7 +31,7 @@ html {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -47,9 +47,6 @@ span {
 /* Header Section */
 
 .header {
-    /* height: 100vh;
-    background-image: url(wallpaper.jpg);
-    background-size: cover; */
     position: fixed;
     top: 0;
     left: 0;
@@ -62,32 +59,14 @@ span {
     z-index: 100;
 }
 
-/* .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 7%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-} */
-
 .logo {
     width: 200px; 
     height: auto;
 }
 
- /* font-size: 3rem;
-    font-weight: 700;
-    color: var(--white);
-    cursor: default; */
-
 .navbar a {
     color: black;
     font-size: 1.5rem;
-    /* margin-right: 1.8rem; */
     margin-left: 4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -176,32 +155,10 @@ span {
     border-radius: 50%;
 }
 
-/* .home-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-    padding: 150px 7%;
-    color: var(--black);
-} */
-
-/* .home-content .description{
-    grid-area: 1 / 1 / 2 / 2;
-} */
-
-
-
-/* .home-content .description h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-} */
-
 .btn {
     display: inline-block;
     padding: 1.3rem 5rem;
     margin: 3rem 0;
-    /* cursor: pointer; */
     color: var(--white);
     font-size: 2rem;
     font-weight: 600;
@@ -209,7 +166,6 @@ span {
     border: 0.3rem solid var(--font-heading);
     border-radius: 4rem;
     background: var(--white);
-    /* color: var(--font-heading); */
     color: var(--black);
     transition: 0.5s ease;
 }
@@ -219,51 +175,6 @@ span {
     color: var(--white);
     box-shadow: 0 0 1rem var(--font-heading);
 }
-
-/* .home-content .partnership {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.home-content .partnership-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-}
-.home-content .partnership-content .div1 {
-    padding: 30px;
-    grid-area: 1 / 1 / 2 / 2;
-    width: 350px;
-    
-}
-.home-content .partnership-content .div1 h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-
-}
-.home-content .partnership-content .div1 h3 {
-    margin-top: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-
-}
-
-.home-content .partnership-content .div1 p {
-    margin-top: 30px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-align: left;
-
-}
-
-.home-content .partnership-content .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-   
-} */
 
 
 /* Product Section */
@@ -487,12 +398,8 @@ textarea {
 
 
 .footer {
-    width: 100%;
-    height: auto;
+    padding: 10px;
     background-color: var(--font-heading);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 20rem;
 }
 
 .footer .container {
@@ -519,6 +426,10 @@ textarea {
     font-weight: 400;
     padding: 1.2rem 0;
 }
+.footer .container .footer-box p span{
+    color: var(--white);
+    font-size: 1.5rem;
+}
 
 .footer .container .footer-box form input {
     width: 70%;
@@ -535,14 +446,30 @@ textarea {
     padding: 1rem;
     cursor: pointer;
 }
+.footer .container .footer-box ul li a {
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration:none ;
+}
 
-.footer .container .footer-box div a {
-    margin: 0.5rem;
-    color: var(--white);
+.footer .container .footer-box .social a {
     display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fcf0ff;
+    margin:0 10px 10px 0;
+    width: 45px;
+    height: 45px;
     text-align: center;
-    background: var(--bg);
+    line-height: 45px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    font-size: 2rem;
+}
+
+.footer .container .footer-box .social a:hover {
+    background-color: #fcf0ff;
+    color: rgb(250, 138, 250);
 }
