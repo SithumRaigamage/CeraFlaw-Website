@@ -430,24 +430,7 @@ span {
     cursor: pointer;
 }
 
-/* Footer Section */
 
-.footer {
-    background-color: var(--font-heading);
-    padding: 20px 0;
-}
-
-.footer-social {
-    text-align: center;
-    padding-bottom: 20px;
-    color: var(--black);
-}
-
-.footer-text {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
 .contact .contact_description h3 span{
     font-size: 2.5rem;
     color: var(--font-heading);
@@ -503,4 +486,63 @@ textarea {
 }
 
 
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--font-heading);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
+}
 
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+
+.footer .container .footer-box {
+    padding: 1rem;
+}
+
+.footer .container .footer-box h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer .container .footer-box p {
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+
+.footer .container .footer-box form input {
+    width: 70%;
+    padding: 1rem;
+}
+
+.footer .container .footer-box p a {
+    color: var(--bg);
+}
+
+.footer .container .footer-box form button {
+    background: var(--bg);
+    color: var(--white);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.footer .container .footer-box div a {
+    margin: 0.5rem;
+    color: var(--white);
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: var(--bg);
+}
