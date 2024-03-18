@@ -266,6 +266,17 @@ span {
 .product {
     min-height: 50vh;
     padding: 10rem 9% 2rem;
+    /*margin-left: 80px;
+    margin-right: 80px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.feature {
+    min-height: 50vh;
+    padding: 10rem 9% 2rem;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,7 +350,7 @@ span {
     transition: .5s ease;
 }
 
-.team-container .team-box:hover {
+.team-container team-box :hover {
     border-color: var(--font-heading);
     transform: scale(1.02);
 }
