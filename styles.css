@@ -17,7 +17,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    /* text-transform: capitalize; */
     transition: 0.2s linear;
 }
 
@@ -25,12 +24,7 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    /* scroll-padding-top: 9rem; */
-}
-
-section {
-    min-height: 90vh;
-    padding: 10rem 9% 2rem;
+    
 }
 
 span {
@@ -133,6 +127,8 @@ span {
 /* Home Section */
 
 .home {
+    min-height: 90vh;
+    padding: 10rem 9% 2rem;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -141,7 +137,6 @@ span {
 
 .home::before {
     content: "";
-    background-image: url(assets/wallpaper.jpg);
     background-size: cover;
     position: absolute;
     top: 0;
@@ -269,6 +264,8 @@ span {
 /* Product Section */
 
 .product {
+    min-height: 50vh;
+    padding: 10rem 9% 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +305,7 @@ span {
     margin-left: -4px;
 }
 
-/* About Section */
+
 
 
 

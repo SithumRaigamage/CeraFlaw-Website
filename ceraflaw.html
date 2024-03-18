@@ -20,7 +20,6 @@
         <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#product" style="--i:2">Product</a>
-            <a href="#about" style="--i:3">About</a>
             <a href="#team" style="--i:4">Team</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
@@ -83,13 +82,6 @@
         </div>
     </section>
     <!-- Product Section End -->
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Us</span></h2>
-    </section>
-    <!-- Abouut Section End -->
-
     
     <!-- Team Section -->
     <section class="team" id="team">
@@ -179,19 +171,19 @@
     <!-- Contact Us Section -->
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
-        <h2 class="heading">Conatct <span>Us</span></h2>
-        <form action="#">
+        <h2 class="heading">Contact <span>Us</span></h2>
+        <form id="contactForm">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
             </div>
 
             <div class="input-box">
-                <input type="text" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+                <input type="text" id="emailSubject" placeholder="Email Subject" required>
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
