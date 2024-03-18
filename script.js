@@ -41,9 +41,32 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     var mobileNumber = document.getElementById('mobileNumber').value;
     var emailSubject = document.getElementById('emailSubject').value;
     var message = document.getElementById('message').value;
+
+    //Validation checks
+    if (fullName === '' || email === '' || mobileNumber === '' || emailSubject === '' || message === '') {
+        event.preventDefault(); // Prevent form submission
+        alert('Please fill out all fields.');
+        return;
+    }
     
+    // Email validation
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        event.preventDefault(); // Prevent form submission
+        alert('Please enter a valid email address.');
+        return;
+    }
+    
+    // Mobile number validation
+    var mobilePattern = /^\d{10}$/;
+    if (!mobilePattern.test(mobileNumber)) {
+        event.preventDefault(); // Prevent form submission
+        alert('Please enter a valid 10-digit mobile number.');
+        return;
+    }
+
     // List of multiple email addresses separated by commas
-    var emails = ['email1@example.com', 'email2@example.com', 'email3@example.com'];
+    var emails = ['chamith.20220427@iit.ac.lk','sithum.20222473@iit.ac.lk','praveen.20220252@iit.ac.lk','thamindu.20220176@iit.ac.lk','tharusha.20221053@iit.ac.lk'];
     
     // Construct mailto URL with multiple email addresses
     var mailtoUrl = 'mailto:' + emails.join(',')  // Join email addresses with commas
