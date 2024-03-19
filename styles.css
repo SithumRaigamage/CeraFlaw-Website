@@ -313,6 +313,68 @@ span {
 .about .about-container .about-image img:hover {
     transform: rotate(90deg); /* Rotate image when hovered */
 }
+/* Feature Section */
+.feature {
+    min-height: 30vh;
+    padding: 10rem 9% 2rem;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding: 2rem 0;
+    gap: 3rem; /* Add gap for space between containers */
+}
+    
+.feature .feature-container .feature-content {
+    grid-area: auto;
+    justify-content: center;
+    margin-bottom: 2rem; /* Add margin bottom for spacing between about content and image */
+}
+
+.feature .feature-container .feature-content .content-one {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--font-heading);
+    text-align: justify;
+}
+
+.feature .feature-container .feature-content .content-two {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--font-heading);
+}
+
+.feature .feature-container .feature-image-1 {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    grid-area: auto; /* Change grid area to auto to allow content and image to stack */
+    margin-top: 1rem;
+    margin-left: 50px; /* Add margin top for spacing between image and content */
+}
+
+.feature .feature-container .feature-image-1 img {
+    cursor: pointer;
+    transition: box-shadow 0.2s ease; /* Add transition for smooth effect */
+}
+
+.feature .feature-container .feature-image-1 img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);/* Rotate image when hovered */
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Why CeraFlaw Section */
