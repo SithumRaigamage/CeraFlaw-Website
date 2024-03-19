@@ -255,66 +255,27 @@ span {
     box-shadow: 0 0 1rem var(--font-heading);
 }
 
-
-/* Product Section */
-
-.product {
-    min-height: 50vh;
+/* About Section */
+.about{
+    min-height: 30vh;
     padding: 10rem 9% 2rem;
-    /*margin-left: 80px;
-    margin-right: 80px;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
 }
-.feature {
-    min-height: 50vh;
-    padding: 10rem 9% 2rem;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.about-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
 }
-
-.product-container {
-    margin-right: 5rem;
-    align-items: center;
+    
+.about .about-container .about-content { 
+    
+    grid-area: 1 / 1 / 2 / 2;
 }
-
-.product-img img {
-    width: 15vw;
+.about .about-container .about-image { 
+    grid-area: 1 / 2 / 2 / 3;
 }
-
-.product-content h2 {
-    margin-bottom: 5rem;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.product-content h3{
-    font-size: 2.6rem;
-}
-
-.product-content p,
-.product-content li{
-    font-size: 1.6rem;
-    margin: 2rem 0;
-}
-
-.product-btn {
-    margin-left: 10px;
-}
-
-.heading {
-    margin-left: -4px;
-}
-
-
-
-
-
 
 /* Team Section */
 
