@@ -311,7 +311,7 @@ span {
 }
 
 .about .about-container .about-image img:hover {
-    transform: rotate(180deg); /* Rotate image when hovered */
+    transform: rotate(90deg); /* Rotate image when hovered */
 }
 
 
