@@ -291,14 +291,22 @@ span {
 }
 
 .about .about-container .about-image {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
     grid-area: auto; /* Change grid area to auto to allow content and image to stack */
     margin-top: 1rem; /* Add margin top for spacing between image and content */
 }
 
 .about .about-container .about-image img {
-    width: 100%;
-    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
+
+.about .about-container .about-image img:hover {
+    transform: rotate(180deg); /* Rotate image when hovered */
+}
+
 
 /* CeraFlaw Section */
 .ceraflaw {
