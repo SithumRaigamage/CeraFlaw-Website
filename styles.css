@@ -256,25 +256,48 @@ span {
 }
 
 /* About Section */
-.about{
+.about {
     min-height: 30vh;
     padding: 10rem 9% 2rem;
 }
+
 .about-container {
-    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding: 2rem 0;
+    gap: 3rem; /* Add gap for space between containers */
 }
     
-.about .about-container .about-content { 
-    
-    grid-area: 1 / 1 / 2 / 2;
+.about .about-container .about-content {
+    grid-area: auto;
+    justify-content: center;
+    margin-bottom: 2rem; /* Add margin bottom for spacing between about content and image */
 }
-.about .about-container .about-image { 
-    grid-area: 1 / 2 / 2 / 3;
+
+.about .about-container .about-content .content-one {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--font-heading);
+    text-align: justify;
+}
+
+.about .about-container .about-content .content-two {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--font-heading);
+}
+
+.about .about-container .about-image {
+    grid-area: auto; /* Change grid area to auto to allow content and image to stack */
+    margin-top: 1rem; /* Add margin top for spacing between image and content */
+}
+
+.about .about-container .about-image img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
 /* Team Section */
