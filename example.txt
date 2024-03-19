@@ -1,2 +1,39 @@
 min-height: 90vh;
     padding: 10rem 9% 2rem;
+
+
+    <!-- Product Section -->
+    <section class="product" id="product">
+
+        <div class="product-container">
+            <div class="product-img">
+                <img src="assets/logo-color.png" alt="CeraFlaw Logo">   
+            </div>
+    
+            <div class="product-btn">
+                <a href="#" class="btn">Visit Project</a> <!--put a git logo-->
+            </div>
+        </div>
+        
+        <div class="product-content">
+            <h2 class="heading"><span>CeraFlaw</span></h2>
+
+            <p>Our product utilizes advanced technology to streamline processes and enhance user experience. Through seamless integration and intuitive design, users can easily navigate and leverage its functionalities.</p>
+
+            <h3>Features</h3>
+            <ul>
+                <li>Feature 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Feature 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Feature 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            </ul>
+
+            <h3>Benefits</h3>
+            <ul>
+                <li>Benefit 1: Increased efficiency and productivity.</li>
+                <li>Benefit 2: Cost-effective solution for businesses of all sizes.</li>
+                <li>Benefit 3: Enhanced user satisfaction and engagement.</li>
+            </ul>
+
+        </div>
+    </section>
+    <!-- Product Section End -->
