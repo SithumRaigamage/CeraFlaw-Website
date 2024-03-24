@@ -63,3 +63,62 @@ min-height: 90vh;
         
     </section>
     <!--Feature Section End-->
+
+<div class="feature-demo">
+                <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+
+
+
+            .feature-container {
+    background-color: #000;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.feature-content-one {
+    background-color: #F6F6F6;
+    padding: 5rem;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.feature-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-image img {
+    height: 150px;
+    width: 150px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.feature-image img:hover {
+    transform: rotate(10deg);
+}
+
+.feature-demo { 
+    justify-content: center;
+    display: flex;
+}
+.feature-content-two { 
+    padding: 10rem 9% 2rem;
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+    
+
