@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Custom css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome Cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="icon" href="/assets/logo-color.png">
-    <title>Ceraflaw</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Font Awesome Cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <link rel="icon" type="image/png" sizes="64x64" href="/assets/logo-color.png">
+        <title>CeraFlaw</title>
+    </head>
 <body>
     <!-- Header Section -->
     <header class="header">
         <a href="#home"><img src="assets/logo.png" alt="" class="logo"></a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-
         <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:3">About</a>
@@ -25,7 +24,6 @@
             <a href="#team" style="--i:6">Team</a>
             <a href="#contact" style="--i:7">Contact</a>
         </nav>
-        
     </header>
     <!-- Header Section End -->
 
@@ -38,10 +36,11 @@
             <br><br>
             <h2>Our Trusted Partner</h2>
             <h3>MACKTILES LANKA</h3>
-            <p>
+            <img src="assets/Mactiles-logo.png" alt="mackTiles" class="partner-logo">
+            <p class="home-description">
                 We are proud to collaborate with Macksons Tiles Lanka (Pvt) Ltd, a renowned leader in tile manufacturing in Sri Lanka. With decades of experience, Macksons Tiles Lanka sets the benchmark for quality, innovation, and craftsmanship in the industry. Their commitment to excellence perfectly aligns with our mission to deliver cutting-edge solutions for defect detection and quality assurance.
             </p>
-            <a href="#contact" class="btn">Contact Us</a>
+            <a href="#contact" class="contact-btn">Contact Us</a>
         </div>
         <div class="home-img">
             <img src="assets/Mactiles-logo.png" alt="mackTiles">
@@ -53,27 +52,19 @@
     <section class="about" id="about">
         <h2 class="heading"><span>About </span>Us</h2>
         <div class="about-container">
-            <div class="about-content">
-
-                <p class="content-one">
-                    CeraFlaw is an innovative AI-based visual defect detection prototype in ceramic tile manufacturing,
-                    pioneering advanced capabilities in quality control solutions. Leveraging cutting-edge technologies
-                    such as machine learning and image processing, CeraFlaw revolutionizes the identification and management
-                    of defects within ceramic tile production processes.
-                </p>
-                <br>
-                <p class="content-two">
-                    This comprehensive platform represents a paradigm shift in the industry, offering unparalleled precision
-                    and efficiency in defect detection and quality assurance. With its intuitive interface and robust algorithms,
-                    CeraFlaw empowers manufacturers to streamline their quality control processes, ensuring the delivery of
-                    flawless ceramic tiles to the market.
-
-                </p>
-            </div>
-            <div class="about-image">
-                <img src="assets/tile-01.png" alt="" height="160px">
-                <img src="assets/tile-03.png" alt="" height="160px">
-            </div>
+            <p class="content-one">
+                CeraFlaw is an innovative AI-based visual defect detection prototype in ceramic tile manufacturing,
+                pioneering advanced capabilities in quality control solutions. Leveraging cutting-edge technologies
+                such as machine learning and image processing, CeraFlaw revolutionizes the identification and management
+                of defects within ceramic tile production processes.
+            </p>
+            <br>
+            <p class="content-two">
+                This comprehensive platform represents a paradigm shift in the industry, offering unparalleled precision
+                and efficiency in defect detection and quality assurance. With its intuitive interface and robust algorithms,
+                CeraFlaw empowers manufacturers to streamline their quality control processes, ensuring the delivery of
+                flawless ceramic tiles to the market.
+            </p>
         </div>
     </section>
     <!--About Section End-->
@@ -89,13 +80,6 @@
                     <li>Line/Crack Detection</li>
                   </ul>
             </div>
-            <div class="feature-image">
-                <img src="assets/defectImage.jpg" alt="Feature Image" height="150px" width="150px">
-                <img src="assets/defectImage.jpg" alt="Feature Image" height="150px" width="150px">
-                <img src="assets/defectImage.jpg" alt="Feature Image" height="150px" width="150px">
-
-
-            </div>
         </div>
         <div class="demo-container">
             <div class="demo-content">
@@ -106,16 +90,13 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/hKdArCJtyH4?si=oYzU7wTbqSq1NjUl" frameborder="0" allowfullscreen></iframe>
                 
             </div>
-
         </div>
     </section>
     <!--Feature Section End-->
 
-
-    
     <!-- CeraFlaw Section -->
     <section class="ceraflaw" id="ceraflaw">
-        <h2 class="heading">Why <span>Ceraflaw</span></h2>
+        <h2 class="heading">Why <span>CeraFlaw ?</span></h2>
 
         <div class="ceraflaw-container">
             <div class="ceraflaw-box">
@@ -151,7 +132,6 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Team Section -->
     <section class="team" id="team">
@@ -169,7 +149,7 @@
                 </div>
                 <h3>Sithum Raigamage</h3>
                 <h4>Lead Developer</h4>
-                <p>description</p>
+                <p>FrontEnd and Machine Learning</p>
                 <div class="team-social">
                     <a href="mailto:sithum.20222473@iit.ac.lk"><i class="fas fa-envelope mail-icon"></i></a>
                     <a href="https://github.com/SithumRaigamage"><i class="fa-brands fa-github"></i></i></a>
@@ -182,8 +162,8 @@
                     <img src="assets/praveen.jpeg" height="240px" alt="">
                 </div>
                 <h3>Praveen Dileesha</h3>
-                <h4>Developer</h4>
-                <p>description</p>
+                <h4>Full Stack Developer</h4>
+                <p>Machine Learning and API Handling</p>
                 <div class="team-social">
                     <a href="mailto:praveen.20220252@iit.ac.lk"><i class="fas fa-envelope mail-icon"></i></a>
                     <a href="https://github.com/PraveenDileesha"><i class="fa-brands fa-github"></i></i></a>
@@ -196,8 +176,8 @@
                     <img src="assets/Thamindu.jpeg" height="240px" alt="">
                 </div>
                 <h3>Thamindu Dasanayake</h3>
-                <h4>Developer</h4>
-                <p>description</p>
+                <h4>Full Stack Developer</h4>
+                <p>Machine Learning and Frontend</p>
                 <div class="team-social">
                     <a href="mailto:thamindu.20220176@iit.ac.lk"><i class="fas fa-envelope mail-icon"></i></a>
                     <a href="https://github.com/thamindu2003"><i class="fa-brands fa-github"></i></i></a>
@@ -210,8 +190,8 @@
                     <img src="assets/chamith.jpeg" height="240px" alt="">
                 </div>
                 <h3>Chaamith Nethsara</h3>
-                <h4>Developer</h4>
-                <p>description</p>
+                <h4>Full Stack Developer</h4>
+                <p>FrontEnd and BackEnd</p>
                 <div class="team-social">
                     <a href="mailto:chamith.20220427@iit.ac.lk"><i class="fas fa-envelope mail-icon"></i></a>
                     <a href="https://github.com/Chaamith-Nethsara"><i class="fa-brands fa-github"></i></i></a>
@@ -224,22 +204,19 @@
                     <img src="assets/tharusha.jpeg" height="240px" alt="">
                 </div>
                 <h3>Tharusha Maddumage</h3>
-                <h4>Developer</h4>
-                <p>description</p>
+                <h4>Full Stack Developer</h4>
+                <p>BackEnd and DataCollection</p>
                 <div class="team-social">
                     <a href="mailto:tharusha.20221053@iit.ac.lk"><i class="fas fa-envelope mail-icon"></i></a>
                     <a href="https://github.com/MaddumageTharusha"><i class="fa-brands fa-github"></i></i></a>
                     <a href="https://www.linkedin.com/in/tharushamd/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-              
         </div>
-
     </section>
     <!-- Team Section End-->
 
     <!-- Contact Us Section -->
-    <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Us</span></h2>
         <form id="contactForm">
@@ -254,20 +231,18 @@
             </div>
 
             <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <input type="submit" value="Send Message" class="send-btn">
         </form>
     </section>
     <!-- Contact Us Section End -->
 
     <!-- Footer Section-->
     <footer class="footer">
-        <p>Copyrights &copy; 2023 All rights reserved By CeraFlaw</p>
+        <p>Copyrights &copy; 2024 All rights reserved By CeraFlaw</p>
     </footer>
     <!-- Footer Section End-->
 
-
-
-    <!-- MAIN JS -->
-    <script src="script.js"></script>
+ <!-- MAIN JS -->
+ <script src="script.js"></script>   
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
@@ -62,18 +61,6 @@ span {
     opacity: 0;
 }
 
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 .navbar a {
     display: inline-block;
     color: black;
@@ -87,17 +74,6 @@ span {
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
     opacity: 0;
-}
-
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 .navbar a:after {
@@ -125,6 +101,29 @@ span {
     font-size: 3.6rem;
     color: var(--black);
     display: none;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
@@ -181,6 +180,9 @@ span {
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
 }
+.partner-logo {
+    display: none;
+}
 
 @keyframes slideBottom {
     0% {
@@ -195,7 +197,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-left: 5px;
     opacity: 0;
@@ -223,6 +225,7 @@ span {
     opacity: 0;
 }
 
+
 @keyframes zoomIn {
     0% {
         transform: scale(0);
@@ -234,7 +237,7 @@ span {
     }
 }
 
-.btn {
+.contact-btn {
     display: inline-block;
     padding: 1.3rem 5rem;
     margin: 3rem 0;
@@ -251,7 +254,7 @@ span {
     animation-delay: 1s;
 }
 
-.btn:hover {
+.contact-btn:hover {
     background: var(--main-color);
     color: var(--text-color);
     box-shadow: 0 0 1rem var(--main-color);
@@ -260,109 +263,63 @@ span {
 
 /* About Section */
 .about {
-    padding: 10rem 9% 2rem;
+    padding: 5rem 9% 2rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     background: var(--sec-bg-color);
 }
 
-.about-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    padding: 1rem 0;
-    gap: 20rem; /* Add gap for space between containers */
-}
-    
-.about .about-container .about-content {
-    grid-area: auto;
-    justify-content: center;
-}
-
-.about .about-container .about-content .content-one {
-    font-size: 1.8rem;
+.about-container .content-one {
+    margin-top: 1rem;
+    font-size: 2rem;
     font-weight: 600;
-    text-align: justify;
+    text-align: center;
 }
 
-.about .about-container .about-content .content-two {
-    text-align: justify;
-    font-size: 1.8rem;
+.about-container .content-two {
+    margin-top: 1rem;
+    font-size: 2rem;
     font-weight: 600;
+    text-align: center;
 }
-
-.about .about-container .about-image {
-    display: flex;
-    gap: 2rem;
-    grid-area: auto; /* Change grid area to auto to allow content and image to stack */
-}
-
-.about .about-container .about-image img {
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Add transition for smooth effect */
-}
-
-.about .about-container .about-image img:hover {
-    transform: rotate(90deg); /* Rotate image when hovered */
-}
-
 
 /* Feature Section */
 .feature {
-    min-height: auto;
     padding: 5rem 9% 2rem;
 }
-
-.feature-container{
-    display: grid;
-    margin-top: 40px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-}
-.feature-container .feature-content-one{
-    padding: 5rem;
-    text-align: justify;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.feature-container .feature-image{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-.feature-image img {
-    height: 150px;
-    width: 150px;
-    transform: rotate(0deg);
-    transition: transform 0.3s ease;
+.feature-container ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-.feature-image img:hover {
-    transform: rotate(10deg);
+.feature-container ul li {
+    margin-bottom: 10px;
+    font-size: 2.2em; /* Adjust font size as needed */
 }
-.demo-container{
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
 
-}
+/* Base styles for the demo section */
 .demo-container {
+    display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    text-align: center; /* Center text */
+    align-items: center;
+    margin-top: 50px;
+}
+.demo-content {
+    text-align: center;
 }
 
 .demo-video {
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-top: 20px;
 }
 
+.demo-video iframe {
+    width: 100%;
+    width: 800px; /* Adjust maximum width as needed */
+    height: 400px; /* Adjust height as needed */
+}
 
 /* Why CeraFlaw Section */
 .ceraflaw {
@@ -407,7 +364,6 @@ span {
     text-align: justify;
 }
 
-
 /* Team Section */
 
 .team {
@@ -447,7 +403,7 @@ span {
 }
 
 .team-img img {
-    width: 100%;
+    width: 60%;
     overflow: hidden;
     border-radius: 1rem;
     object-fit: cover;
@@ -460,13 +416,13 @@ span {
 }
 
 .team-box h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     padding: 0.5rem 0;
 }
 
 .team-box p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem 0;
 }
 
@@ -484,7 +440,6 @@ span {
 .team-social a:hover {
     border-radius: 50%;
 }
-
 
 /* Contact Section */
 
@@ -591,7 +546,19 @@ textarea {
     cursor: pointer;
     font-size: 16px;
 }
-
+.send-btn{
+    display: inline-block;
+    padding: 1.3rem 5rem;
+    margin: 3rem 0;
+    background: var(--main-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    border: 0.3rem solid var(--main-color);
+    border-radius: 4rem;
+    color: var(--text-color);
+    transition: 0.5s ease;
+}
 
 /* footer Section */
 .footer {
@@ -647,7 +614,6 @@ textarea {
         transition: .5s ease;
     }
 
-
     .navbar {
         position: absolute;
         top: 100%;
@@ -674,67 +640,59 @@ textarea {
     .navbar a.active::after {
         width: 12%;
     }
-
     .home {
         flex-direction: column;
     }
 
+
     .home-content h1 {
         font-size: 5rem;
+        text-align: center;
     }
 
     .home-content h2 {
         font-size: 3rem;
+        text-align: center;
     }
 
     .home-content h3 {
         font-size: 2.6rem;
+        text-align: center;
     }
 
     .home-content {
         order: 2;
-    }
-
-    .home-img img {
-        width: 30vw;
-        margin-top: 2rem;
-    }
-
-    .product {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .home-content p{
+        text-align: center;
     }
 
-    .product-img img {
-        width: 50vw;
-        margin-top: 4rem;
-    }
-    .feature-container {
-        grid-template-columns: 1fr; /* Display features in a single column */
+    .home-img {
+        display: none;
     }
 
-    .feature .feature-container .feature-content-one {
-        padding: 0 2rem; /* Adjust padding for better spacing */
-        text-align: center; /* Center align feature content */
+    .partner-logo {
+        display: block;
+        width: 50%;
+        margin: 100;
     }
-
-    .feature .feature-container .feature-image {
-        justify-content: center; /* Center align feature images */
+    .contact-btn {
+        justify-content: center;
+        text-align: center;
+        margin: 5 auto; /* Center the button horizontally */
     }
-
-    .feature-image img {
-        width: 60vw; /* Adjust image width for better display */
-        margin-top: 2rem; /* Adjust margin for better spacing */
+    .about .about-container {
+        padding: 0 10px;
     }
-    .demo-container {
-        grid-template-columns: 1fr; /* Display demo content in a single column */
+    .demo-video {
+        margin-top: 20px;
+        max-width: 100%; /* Make video responsive */
     }
-
-    .demo-container .demo-video {
-        margin-bottom: 2rem; /* Adjust margin for better spacing */
-    }
-
-    .ceraflaw-container {
-        flex-direction: column; /* Display Why Ceraflaw content in a single column */
-    }
-
+    
+    .demo-video iframe {
+        width: 100%;
+    }    
 }
